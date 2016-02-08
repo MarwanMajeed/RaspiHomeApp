@@ -19,7 +19,7 @@ import java.net.URL;
  */
 public class RSHomatic {
 
-    public String SetVar(Integer ID, Integer Wert) {
+    public String SetVar(Integer ID, String Wert) {
 
         String resultwert = "";
         String url = "http://raspberrypi:8080/api/set/" + ID.toString() + "/?value=" + Wert.toString();
@@ -57,8 +57,9 @@ public class RSHomatic {
     }
 
     
-    public String GetValue(String ID) {
-        String url = "http://raspberrypi:8080/api/getPlainValue/"+ID;
+    public String GetValue(Integer ID) {
+        
+        String url = "http://raspberrypi:8080/api/getPlainValue/" + ID.toString();
         String s1 = "";
         
         try {

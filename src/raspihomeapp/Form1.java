@@ -359,7 +359,7 @@ public class Form1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         RSHomatic RSH = new RSHomatic();
-        String s = RSH.GetValue("1599");
+        String s = RSH.GetValue(1599);
 
         jTextField3.setText(s);
 
